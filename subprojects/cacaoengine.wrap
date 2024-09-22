@@ -1,5 +1,5 @@
 [wrap-git]
 url = https://github.com/RobotLeopard86/CacaoEngine
 depth = 1
-revision = dev
+revision = main
 clone-recursive = true
