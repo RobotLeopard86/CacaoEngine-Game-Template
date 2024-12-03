@@ -1,6 +1,6 @@
 project('cacao-engine-template', 'cpp', default_options: ['cpp_std=c++20'])
 
-cacao = subproject('cacaoengine', required: true, default_options: ['use_backend=gles-glfw', 'build_playground=false'])
+cacao = subproject('cacaoengine', required: true, default_options: ['use_backend=gl-glfw', 'build_playground=false', 'exe_name=cacao-template'])
 cacao_dep = cacao.get_variable('cacao_dep')
 
 launch = shared_module('launch', name_prefix: '', dependencies: cacao_dep, sources: [
